@@ -1,0 +1,16 @@
+---
+# tasks file for roles/vpc_peering
+- name: Create cross account VPC peering Connection
+  ec2_vpc_peer:
+     aws_access_key: "{{aws_access_key}}"
+     aws_secret_key: "{{aws_secret_key}}"
+     region: "{{region}}"
+     vpc_id: "{{vpc.vpc.id}}"
+     peer_vpc_id: "{{peer_vpc_id}}"
+     peer_region: "{{peer_region}}"
+     state: present
+     tags:
+      Name: Peering connection for Tokyo and selected vpc
+      Env: Dev
+      Project: CICD
+  register: vpc_peer
