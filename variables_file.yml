@@ -53,7 +53,7 @@ web_sg_name: CICD_WebServer_SecGroup
 web_sg_desc: CICD_WebServer_SecGroup
 app_sg_name: CICD_AppServer_SecGroup
 app_sg_desc: CICD_AppServer_SecGroup
-app_sg_rule_desc: Allow application access on port 8080
+app_sg_rule_desc: Allow application access on port 8085
 
 # ------ Internet Gateway ------------------------ #
 
