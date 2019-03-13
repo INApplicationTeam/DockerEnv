@@ -76,8 +76,8 @@ app_port_no: 8080
 
 #app_instance_name1: CICDAppServer1
 #app_instance_name2: CICDAppServer2
-app_instance_name1: Docker2
-app_instance_name2: Docker1
+app_instance_name1: Dockerserver1
+app_instance_name2: Dockerserver2
 
 
 # ----- AMI Image ------------------------------ #
@@ -99,9 +99,9 @@ key_pair: devopkey
 
 # ----- Load Balancer Target group name ---- #
 
-target_group_name: CICDProject
-lb_name : CICDLoadBalancer
+target_group_name: CICDDockerProject
+lb_name : CICDDockerLoadBalancer
 
 # For route53 records #
 dns_name: myawsdev.net
-new_dns_name: online.myawsdev.net
+new_dns_name: studentonline.myawsdev.net
