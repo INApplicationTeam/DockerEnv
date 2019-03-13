@@ -69,7 +69,7 @@ rt3_name: CICD_WebServer_Routetable
 apprt_name: CICD_APPServer_Routetable
 
 app_protocol: tcp
-app_port_no: 8080
+app_port_no: 8085
 
 # ----- Instance Name --------------------------- #
 
