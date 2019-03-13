@@ -11,7 +11,7 @@
    vpc_id: "{{vpc.vpc.id}}"
    targets:
    - Id: "{{vpc_info.appserver1.tagged_instances[0].id}}"
-     Port: 8080
+     Port: 8085
    - Id: "{{vpc_info.appserver2.tagged_instances[0].id}}"
-     Port: 8080
+     Port: 8085
    state: present
